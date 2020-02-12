@@ -74,7 +74,7 @@ section {
 }
 
 h1 {
-	font-size: 2em;
+	font-size: 10em;
 	margin: 0.67em 0;
 }
 
@@ -2274,7 +2274,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 .page .entry-header .edit-link {
-	font-size: 14px;
+	font-size: 20px;
 	font-size: 0.875rem;
 }
 
@@ -4246,7 +4246,7 @@ p > object:only-child {
 	.page .panel-content .entry-title,
 	.page-title,
 	body.page:not(.twentyseventeen-front-page) .entry-title {
-		font-size: 10pt;
+		font-size: 22pt;
 	}
 
 	/* Layout */

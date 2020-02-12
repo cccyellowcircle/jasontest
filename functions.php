@@ -664,3 +664,25 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
  * SVG icons functions and filters.
  */
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
+
+/** 
+ * editor buttons
+ */
+function add_editor_buttons($buttons) {
+ $buttons[] = 'fontselect';
+ $buttons[] = 'fontsizeselect';
+ $buttons[] = 'backcolor';
+ $buttons[] = 'underline';
+ $buttons[] = 'hr';
+ $buttons[] = 'sub';
+ $buttons[] = 'sup';
+ $buttons[] = 'cut';
+ $buttons[] = 'copy';
+ $buttons[] = 'paste';
+ $buttons[] = 'cleanup';
+ $buttons[] = 'wp_page';
+ $buttons[] = 'newdocument';
+ $buttons[] = 'styleselect';
+ return $buttons;
+}
+add_filter("mce_buttons_3", "add_editor_buttons");
